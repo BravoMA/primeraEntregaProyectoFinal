@@ -7,4 +7,5 @@ urlpatterns = [
     path('agregar/', views.agregar, name="agregar"),
     path('borrar/<identificador>', views.borrar, name="borrar"),
     path('buscar/', views.buscar, name="buscar"),
+    path('mostrar/', views.mostrar, name="mostrar"),
 ]

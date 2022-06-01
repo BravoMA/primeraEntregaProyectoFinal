@@ -12,3 +12,20 @@ class PersonaForm(forms.Form):
 
 class BuscarPersonasForm(forms.Form):
     palabra_a_buscar = forms.CharField(label="Buscar")
+
+class MascotaForm(forms.Form):
+    nombre = forms.CharField(label="Nombre", max_length=20)
+    tipo = forms.CharField(label="Tipo", max_length=20)
+    edad = forms.IntegerField(label="Edad")
+
+class BuscarMascotasForm(forms.Form):
+    palabra_a_buscar = forms.CharField(label="Buscar")
+
+class Vehiculo(forms.Form):
+    tipo = forms.CharField(label="Tipo", max_length=20)
+    marca = forms.CharField(label="Marca", max_length=20)
+    modelo = forms.CharField(label="Modelo", max_length=20)
+    
+
+class BuscarVehiculosForm(forms.Form):
+    palabra_a_buscar = forms.CharField(label="Buscar")

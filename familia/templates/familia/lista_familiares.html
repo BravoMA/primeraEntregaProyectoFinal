@@ -9,8 +9,10 @@
     <div class="col">
       {% url 'agregar' as agregar_url %}
       {% url 'buscar' as buscar_url %}
+      {% url 'mostrar' as mostrar_url %}
       {% bootstrap_button "Agregar" button_class="btn-success" button_type="link" href=agregar_url %} 
-      {% bootstrap_button "Buscar" button_class="btn-success" button_type="link" href=buscar_url %}  
+      {% bootstrap_button "Buscar" button_class="btn-success" button_type="link" href=buscar_url %} 
+      {% bootstrap_button "Mostrar" button_class="btn-success" button_type="link" href=mostrar_url %}
     <div>
   <div>
 
